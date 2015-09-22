@@ -1,0 +1,9 @@
+<html>
+<head>
+</head>
+<body>
+<?php echo $this->getForm()->toHtml() ?>
+<?php echo $this->__('You will be redirected to the PayMaster website in a few seconds.') ?>
+<script type="text/javascript">
+    document.getElementById("paymaster_form").submit();
+</script>

@@ -3,7 +3,7 @@
     <modules>
         <Voronoy_Paymaster>
             <active>true</active>
-            <codePool>local</codePool>
+            <codePool>community</codePool>
             <depends>
                 <Mage_Payment/>
             </depends>
