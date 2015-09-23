@@ -52,6 +52,7 @@
     <default>
         <payment>
             <paymaster_general>
+                <model>voronoy_paymaster/method_general</model>
                 <active>1</active>
                 <title>PayMaster</title>
                 <order_status>processing</order_status>

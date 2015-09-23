@@ -53,17 +53,18 @@ class Voronoy_Paymaster_PaymentController extends Mage_Core_Controller_Front_Act
                 Mage::throwException(Mage::helper('voronoy_paymaster')->__('Invalid Hash'));
             }
             if ($order->canInvoice()) {
-                $invoice = Mage::getModel('sales/service_order', $order)->prepareInvoice();
-                $invoice->setRequestedCaptureCase(Mage_Sales_Model_Order_Invoice::CAPTURE_OFFLINE);
+                $invoice = $order->prepareInvoice();
                 $invoice->register();
-                $invoice->getOrder()->setIsInProcess(true);
-                $order->addStatusHistoryComment(
-                    Mage::helper('voronoy_paymaster')->__('Payment confirmed by PayMaster'));
                 $transactionSave = Mage::getModel('core/resource_transaction')
                     ->addObject($invoice)
                     ->addObject($invoice->getOrder());
 
                 $transactionSave->save();
+
+                $order->setStatus(Mage::helper('voronoy_paymaster')->getOrderState());
+                $order->addStatusHistoryComment(
+                    Mage::helper('voronoy_paymaster')->__('Payment confirmed by PayMaster'));
+                $order->save();
             }
         } catch (Exception $e) {
             Mage::logException($e);

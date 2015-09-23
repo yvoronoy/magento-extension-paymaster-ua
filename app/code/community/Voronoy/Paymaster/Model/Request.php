@@ -65,10 +65,12 @@ class Voronoy_Paymaster_Model_Request extends Varien_Object
             self::FIELD_NAME_PAYMENT_DESC   => '',
             self::FIELD_NAME_SUCCESS_URL    => Mage::getUrl('paymaster/payment/success'),
             self::FIELD_NAME_FAIL_URL       => Mage::getUrl('paymaster/payment/fail'),
-            self::FIELD_NAME_PAYMENT_SYSTEM => $this->getPaymentMethod()->getPaymentSystemId(),
             self::FIELD_NAME_PAYER_EMAIL    => $this->getOrder()->getCustomerEmail(),
             self::FIELD_NAME_HASH           => $this->getSignOfRequest(),
         );
+        if ($this->getPaymentMethod()->getPaymentSystemId()) {
+            $requestData[self::FIELD_NAME_PAYMENT_SYSTEM] = $this->getPaymentMethod()->getPaymentSystemId();
+        }
         $this->addData($requestData);
     }
 
