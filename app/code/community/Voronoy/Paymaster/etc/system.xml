@@ -3,7 +3,7 @@
     <sections>
         <payment>
             <groups>
-                <paymaster_general translate="label">
+                <paymaster_general translate="label" module="voronoy_paymaster">
                     <label>PayMasterUA General Settings</label>
                     <frontend_type>text</frontend_type>
                     <sort_order>1</sort_order>
@@ -11,7 +11,7 @@
                     <show_in_website>1</show_in_website>
                     <show_in_store>1</show_in_store>
                     <fields>
-                        <active translate="label">
+                        <active translate="label" module="voronoy_paymaster">
                             <label>Enabled</label>
                             <frontend_type>select</frontend_type>
                             <source_model>adminhtml/system_config_source_yesno</source_model>
@@ -20,7 +20,7 @@
                             <show_in_website>1</show_in_website>
                             <show_in_store>0</show_in_store>
                         </active>
-                        <title translate="label">
+                        <title translate="label" module="voronoy_paymaster">
                             <label>Title</label>
                             <frontend_type>text</frontend_type>
                             <sort_order>20</sort_order>
@@ -28,7 +28,7 @@
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
                         </title>
-                        <merchant_id translate="label">
+                        <merchant_id translate="label" module="voronoy_paymaster">
                             <label>Merchant Id</label>
                             <frontend_type>text</frontend_type>
                             <sort_order>30</sort_order>
@@ -36,7 +36,7 @@
                             <show_in_website>1</show_in_website>
                             <show_in_store>0</show_in_store>
                         </merchant_id>
-                        <secret_key translate="label">
+                        <secret_key translate="label" module="voronoy_paymaster">
                             <label>Merchant Secret Key</label>
                             <frontend_type>obscure</frontend_type>
                             <backend_model>adminhtml/system_config_backend_encrypted</backend_model>
@@ -45,7 +45,7 @@
                             <show_in_website>1</show_in_website>
                             <show_in_store>0</show_in_store>
                         </secret_key>
-                        <encryption_method translate="label">
+                        <encryption_method translate="label" module="voronoy_paymaster">
                             <label>Encryption Method</label>
                             <frontend_type>select</frontend_type>
                             <source_model>voronoy_paymaster/system_config_source_encryption</source_model>
@@ -54,7 +54,7 @@
                             <show_in_website>1</show_in_website>
                             <show_in_store>0</show_in_store>
                         </encryption_method>
-                        <order_status translate="label">
+                        <order_status translate="label" module="voronoy_paymaster">
                             <label>New Order Status</label>
                             <frontend_type>select</frontend_type>
                             <source_model>adminhtml/system_config_source_order_status</source_model>
@@ -63,7 +63,7 @@
                             <show_in_website>1</show_in_website>
                             <show_in_store>0</show_in_store>
                         </order_status>
-                        <debug translate="label">
+                        <debug translate="label" module="voronoy_paymaster">
                             <label>Debug</label>
                             <frontend_type>select</frontend_type>
                             <source_model>adminhtml/system_config_source_yesno</source_model>
@@ -72,7 +72,7 @@
                             <show_in_website>1</show_in_website>
                             <show_in_store>0</show_in_store>
                         </debug>
-                        <sort_order translate="label">
+                        <sort_order translate="label" module="voronoy_paymaster">
                             <label>Sort Order</label>
                             <frontend_type>text</frontend_type>
                             <sort_order>70</sort_order>
@@ -82,7 +82,7 @@
                         </sort_order>
                     </fields>
                 </paymaster_general>
-                <paymaster_test translate="label">
+                <paymaster_test translate="label" module="voronoy_paymaster">
                     <label>PayMasterUA Test Method Settings</label>
                     <frontend_type>text</frontend_type>
                     <sort_order>2</sort_order>
@@ -90,7 +90,7 @@
                     <show_in_website>1</show_in_website>
                     <show_in_store>1</show_in_store>
                     <fields>
-                        <active translate="label">
+                        <active translate="label" module="voronoy_paymaster">
                             <label>Enabled</label>
                             <frontend_type>select</frontend_type>
                             <source_model>adminhtml/system_config_source_yesno</source_model>
@@ -99,7 +99,7 @@
                             <show_in_website>1</show_in_website>
                             <show_in_store>0</show_in_store>
                         </active>
-                        <title translate="label">
+                        <title translate="label" module="voronoy_paymaster">
                             <label>Title</label>
                             <frontend_type>text</frontend_type>
                             <sort_order>20</sort_order>
@@ -107,7 +107,7 @@
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
                         </title>
-                        <sort_order translate="label">
+                        <sort_order translate="label" module="voronoy_paymaster">
                             <label>Sort Order</label>
                             <frontend_type>text</frontend_type>
                             <sort_order>30</sort_order>
@@ -117,7 +117,7 @@
                         </sort_order>
                     </fields>
                 </paymaster_test>
-                <paymaster_webmoney translate="label">
+                <paymaster_webmoney translate="label" module="voronoy_paymaster">
                     <label>PayMasterUA WebMoney Settings</label>
                     <frontend_type>text</frontend_type>
                     <sort_order>3</sort_order>
@@ -125,7 +125,7 @@
                     <show_in_website>1</show_in_website>
                     <show_in_store>1</show_in_store>
                     <fields>
-                    <active translate="label">
+                    <active translate="label" module="voronoy_paymaster">
                         <label>Enabled</label>
                         <frontend_type>select</frontend_type>
                         <source_model>adminhtml/system_config_source_yesno</source_model>
@@ -134,7 +134,7 @@
                         <show_in_website>1</show_in_website>
                         <show_in_store>0</show_in_store>
                     </active>
-                    <title translate="label">
+                    <title translate="label" module="voronoy_paymaster">
                         <label>Title</label>
                         <frontend_type>text</frontend_type>
                         <sort_order>20</sort_order>
@@ -142,7 +142,7 @@
                         <show_in_website>1</show_in_website>
                         <show_in_store>1</show_in_store>
                     </title>
-                        <sort_order translate="label">
+                        <sort_order translate="label" module="voronoy_paymaster">
                             <label>Sort Order</label>
                             <frontend_type>text</frontend_type>
                             <sort_order>30</sort_order>
@@ -152,7 +152,7 @@
                         </sort_order>
                     </fields>
                 </paymaster_webmoney>
-                <paymaster_monexy translate="label">
+                <paymaster_monexy translate="label" module="voronoy_paymaster">
                     <label>PayMasterUA MoneXy Settings</label>
                     <frontend_type>text</frontend_type>
                     <sort_order>3</sort_order>
@@ -160,7 +160,7 @@
                     <show_in_website>1</show_in_website>
                     <show_in_store>1</show_in_store>
                     <fields>
-                        <active translate="label">
+                        <active translate="label" module="voronoy_paymaster">
                             <label>Enabled</label>
                             <frontend_type>select</frontend_type>
                             <source_model>adminhtml/system_config_source_yesno</source_model>
@@ -169,7 +169,7 @@
                             <show_in_website>1</show_in_website>
                             <show_in_store>0</show_in_store>
                         </active>
-                        <title translate="label">
+                        <title translate="label" module="voronoy_paymaster">
                             <label>Title</label>
                             <frontend_type>text</frontend_type>
                             <sort_order>20</sort_order>
@@ -177,7 +177,7 @@
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
                         </title>
-                        <sort_order translate="label">
+                        <sort_order translate="label" module="voronoy_paymaster">
                             <label>Sort Order</label>
                             <frontend_type>text</frontend_type>
                             <sort_order>30</sort_order>
@@ -187,7 +187,7 @@
                         </sort_order>
                     </fields>
                 </paymaster_monexy>
-                <paymaster_easypay translate="label">
+                <paymaster_easypay translate="label" module="voronoy_paymaster">
                     <label>PayMaster EasyPay Settings</label>
                     <frontend_type>text</frontend_type>
                     <sort_order>3</sort_order>
@@ -195,7 +195,7 @@
                     <show_in_website>1</show_in_website>
                     <show_in_store>1</show_in_store>
                     <fields>
-                        <active translate="label">
+                        <active translate="label" module="voronoy_paymaster">
                             <label>Enabled</label>
                             <frontend_type>select</frontend_type>
                             <source_model>adminhtml/system_config_source_yesno</source_model>
@@ -204,7 +204,7 @@
                             <show_in_website>1</show_in_website>
                             <show_in_store>0</show_in_store>
                         </active>
-                        <title translate="label">
+                        <title translate="label" module="voronoy_paymaster">
                             <label>Title</label>
                             <frontend_type>text</frontend_type>
                             <sort_order>20</sort_order>
@@ -212,7 +212,7 @@
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
                         </title>
-                        <sort_order translate="label">
+                        <sort_order translate="label" module="voronoy_paymaster">
                             <label>Sort Order</label>
                             <frontend_type>text</frontend_type>
                             <sort_order>30</sort_order>
@@ -222,7 +222,7 @@
                         </sort_order>
                     </fields>
                 </paymaster_easypay>
-                <paymaster_nsmep translate="label">
+                <paymaster_nsmep translate="label" module="voronoy_paymaster">
                     <label>PayMaster NSMEP Settings</label>
                     <frontend_type>text</frontend_type>
                     <sort_order>3</sort_order>
@@ -230,7 +230,7 @@
                     <show_in_website>1</show_in_website>
                     <show_in_store>1</show_in_store>
                     <fields>
-                        <active translate="label">
+                        <active translate="label" module="voronoy_paymaster">
                             <label>Enabled</label>
                             <frontend_type>select</frontend_type>
                             <source_model>adminhtml/system_config_source_yesno</source_model>
@@ -239,7 +239,7 @@
                             <show_in_website>1</show_in_website>
                             <show_in_store>0</show_in_store>
                         </active>
-                        <title translate="label">
+                        <title translate="label" module="voronoy_paymaster">
                             <label>Title</label>
                             <frontend_type>text</frontend_type>
                             <sort_order>20</sort_order>
@@ -247,7 +247,7 @@
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
                         </title>
-                        <sort_order translate="label">
+                        <sort_order translate="label" module="voronoy_paymaster">
                             <label>Sort Order</label>
                             <frontend_type>text</frontend_type>
                             <sort_order>30</sort_order>
@@ -257,7 +257,7 @@
                         </sort_order>
                     </fields>
                 </paymaster_nsmep>
-                <paymaster_terminal_webmoney translate="label">
+                <paymaster_terminal_webmoney translate="label" module="voronoy_paymaster">
                     <label>PayMasterUA Terminals Ukraine Settings</label>
                     <frontend_type>text</frontend_type>
                     <sort_order>3</sort_order>
@@ -265,7 +265,7 @@
                     <show_in_website>1</show_in_website>
                     <show_in_store>1</show_in_store>
                     <fields>
-                        <active translate="label">
+                        <active translate="label" module="voronoy_paymaster">
                             <label>Enabled</label>
                             <frontend_type>select</frontend_type>
                             <source_model>adminhtml/system_config_source_yesno</source_model>
@@ -274,7 +274,7 @@
                             <show_in_website>1</show_in_website>
                             <show_in_store>0</show_in_store>
                         </active>
-                        <title translate="label">
+                        <title translate="label" module="voronoy_paymaster">
                             <label>Title</label>
                             <frontend_type>text</frontend_type>
                             <sort_order>20</sort_order>
@@ -282,7 +282,7 @@
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
                         </title>
-                        <sort_order translate="label">
+                        <sort_order translate="label" module="voronoy_paymaster">
                             <label>Sort Order</label>
                             <frontend_type>text</frontend_type>
                             <sort_order>30</sort_order>
@@ -292,7 +292,7 @@
                         </sort_order>
                     </fields>
                 </paymaster_terminal_webmoney>
-                <paymaster_card translate="label">
+                <paymaster_card translate="label" module="voronoy_paymaster">
                     <label>PayMasterUA Visa/MasterCard Settings</label>
                     <frontend_type>text</frontend_type>
                     <sort_order>3</sort_order>
@@ -300,7 +300,7 @@
                     <show_in_website>1</show_in_website>
                     <show_in_store>1</show_in_store>
                     <fields>
-                        <active translate="label">
+                        <active translate="label" module="voronoy_paymaster">
                             <label>Enabled</label>
                             <frontend_type>select</frontend_type>
                             <source_model>adminhtml/system_config_source_yesno</source_model>
@@ -309,7 +309,7 @@
                             <show_in_website>1</show_in_website>
                             <show_in_store>0</show_in_store>
                         </active>
-                        <title translate="label">
+                        <title translate="label" module="voronoy_paymaster">
                             <label>Title</label>
                             <frontend_type>text</frontend_type>
                             <sort_order>20</sort_order>
@@ -317,7 +317,7 @@
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
                         </title>
-                        <sort_order translate="label">
+                        <sort_order translate="label" module="voronoy_paymaster">
                             <label>Sort Order</label>
                             <frontend_type>text</frontend_type>
                             <sort_order>30</sort_order>
@@ -327,7 +327,7 @@
                         </sort_order>
                     </fields>
                 </paymaster_card>
-                <paymaster_privat translate="label">
+                <paymaster_privat translate="label" module="voronoy_paymaster">
                     <label>PayMasterUA Privat 24 Settings</label>
                     <frontend_type>text</frontend_type>
                     <sort_order>3</sort_order>
@@ -335,7 +335,7 @@
                     <show_in_website>1</show_in_website>
                     <show_in_store>1</show_in_store>
                     <fields>
-                        <active translate="label">
+                        <active translate="label" module="voronoy_paymaster">
                             <label>Enabled</label>
                             <frontend_type>select</frontend_type>
                             <source_model>adminhtml/system_config_source_yesno</source_model>
@@ -344,7 +344,7 @@
                             <show_in_website>1</show_in_website>
                             <show_in_store>0</show_in_store>
                         </active>
-                        <title translate="label">
+                        <title translate="label" module="voronoy_paymaster">
                             <label>Title</label>
                             <frontend_type>text</frontend_type>
                             <sort_order>20</sort_order>
@@ -352,7 +352,7 @@
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
                         </title>
-                        <sort_order translate="label">
+                        <sort_order translate="label" module="voronoy_paymaster">
                             <label>Sort Order</label>
                             <frontend_type>text</frontend_type>
                             <sort_order>30</sort_order>
@@ -362,7 +362,7 @@
                         </sort_order>
                     </fields>
                 </paymaster_privat>
-                <paymaster_liqpay translate="label">
+                <paymaster_liqpay translate="label" module="voronoy_paymaster">
                     <label>PayMasterUA Liqpay Settings</label>
                     <frontend_type>text</frontend_type>
                     <sort_order>3</sort_order>
@@ -370,7 +370,7 @@
                     <show_in_website>1</show_in_website>
                     <show_in_store>1</show_in_store>
                     <fields>
-                        <active translate="label">
+                        <active translate="label" module="voronoy_paymaster">
                             <label>Enabled</label>
                             <frontend_type>select</frontend_type>
                             <source_model>adminhtml/system_config_source_yesno</source_model>
@@ -379,7 +379,7 @@
                             <show_in_website>1</show_in_website>
                             <show_in_store>0</show_in_store>
                         </active>
-                        <title translate="label">
+                        <title translate="label" module="voronoy_paymaster">
                             <label>Title</label>
                             <frontend_type>text</frontend_type>
                             <sort_order>20</sort_order>
@@ -387,7 +387,7 @@
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
                         </title>
-                        <sort_order translate="label">
+                        <sort_order translate="label" module="voronoy_paymaster">
                             <label>Sort Order</label>
                             <frontend_type>text</frontend_type>
                             <sort_order>30</sort_order>

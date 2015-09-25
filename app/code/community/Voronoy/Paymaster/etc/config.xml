@@ -40,14 +40,25 @@
         </routers>
         <translate>
             <modules>
-                <voronoy_paymaster>
+                <Voronoy_Paymaster>
                     <files>
                         <default>Voronoy_Paymaster.csv</default>
                     </files>
-                </voronoy_paymaster>
+                </Voronoy_Paymaster>
             </modules>
         </translate>
     </frontend>
+    <adminhtml>
+        <translate>
+            <modules>
+                <Voronoy_Paymaster>
+                    <files>
+                        <default>Voronoy_Paymaster.csv</default>
+                    </files>
+                </Voronoy_Paymaster>
+            </modules>
+        </translate>
+    </adminhtml>
 
     <default>
         <payment>
