@@ -54,58 +54,57 @@
             <paymaster_general>
                 <model>voronoy_paymaster/method_general</model>
                 <active>1</active>
-                <title>PayMaster</title>
+                <title>PayMasterUA</title>
                 <order_status>processing</order_status>
                 <test>0</test>
-                <sort_order>10</sort_order>
                 <gateway_url>https://lmi.paymaster.ua/</gateway_url>
-                <merchant_id backend_model="adminhtml/system_config_backend_encrypted"></merchant_id>
+                <merchant_id></merchant_id>
                 <secret_key backend_model="adminhtml/system_config_backend_encrypted"></secret_key>
             </paymaster_general>
             <paymaster_test>
                 <model>voronoy_paymaster/method_test</model>
                 <active>0</active>
-                <title>PayMaster Test Method</title>
+                <title>PayMasterUA Test</title>
             </paymaster_test>
             <paymaster_webmoney>
                 <model>voronoy_paymaster/method_webmoney</model>
                 <active>0</active>
-                <title>PayMaster WebMoney</title>
+                <title>WebMoney</title>
             </paymaster_webmoney>
             <paymaster_monexy>
                 <model>voronoy_paymaster/method_monexy</model>
                 <active>0</active>
-                <title>PayMaster MoneXy</title>
+                <title>MoneXy</title>
             </paymaster_monexy>
             <paymaster_easypay>
                 <model>voronoy_paymaster/method_easypay</model>
                 <active>0</active>
-                <title>PayMaster EasyPay</title>
+                <title>EasyPay Purse</title>
             </paymaster_easypay>
             <paymaster_nsmep>
                 <model>voronoy_paymaster/method_nsmep</model>
                 <active>0</active>
-                <title>PayMaster NSMEP</title>
+                <title>NSMEP</title>
             </paymaster_nsmep>
             <paymaster_terminal_webmaster>
                 <model>voronoy_paymaster/method_terminal_webmoney</model>
                 <active>0</active>
-                <title>PayMaster Webmaster Terminal</title>
+                <title>Terminals Ukraine</title>
             </paymaster_terminal_webmaster>
             <paymaster_card>
                 <model>voronoy_paymaster/method_card</model>
                 <active>0</active>
-                <title>PayMaster Card (Visa/MasterCard)</title>
+                <title>Visa/MasterCard</title>
             </paymaster_card>
             <paymaster_privat>
                 <model>voronoy_paymaster/method_privat</model>
                 <active>0</active>
-                <title>PayMaster Privat24</title>
+                <title>Privat 24</title>
             </paymaster_privat>
             <paymaster_liqpay>
                 <model>voronoy_paymaster/method_liqpay</model>
                 <active>0</active>
-                <title>PayMaster LiqPay</title>
+                <title>LiqPay</title>
             </paymaster_liqpay>
         </payment>
     </default>

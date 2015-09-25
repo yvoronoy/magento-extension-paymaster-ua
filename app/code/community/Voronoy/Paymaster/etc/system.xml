@@ -4,7 +4,7 @@
         <payment>
             <groups>
                 <paymaster_general translate="label">
-                    <label>PayMaster General Settings</label>
+                    <label>PayMasterUA General Settings</label>
                     <frontend_type>text</frontend_type>
                     <sort_order>1</sort_order>
                     <show_in_default>1</show_in_default>
@@ -30,8 +30,7 @@
                         </title>
                         <merchant_id translate="label">
                             <label>Merchant Id</label>
-                            <frontend_type>obscure</frontend_type>
-                            <backend_model>adminhtml/system_config_backend_encrypted</backend_model>
+                            <frontend_type>text</frontend_type>
                             <sort_order>30</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
@@ -84,7 +83,7 @@
                     </fields>
                 </paymaster_general>
                 <paymaster_test translate="label">
-                    <label>PayMaster Test Method</label>
+                    <label>PayMasterUA Test Method Settings</label>
                     <frontend_type>text</frontend_type>
                     <sort_order>2</sort_order>
                     <show_in_default>1</show_in_default>
@@ -108,10 +107,18 @@
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
                         </title>
+                        <sort_order translate="label">
+                            <label>Sort Order</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </sort_order>
                     </fields>
                 </paymaster_test>
                 <paymaster_webmoney translate="label">
-                    <label>PayMaster Webmoney</label>
+                    <label>PayMasterUA WebMoney Settings</label>
                     <frontend_type>text</frontend_type>
                     <sort_order>3</sort_order>
                     <show_in_default>1</show_in_default>
@@ -135,10 +142,18 @@
                         <show_in_website>1</show_in_website>
                         <show_in_store>1</show_in_store>
                     </title>
+                        <sort_order translate="label">
+                            <label>Sort Order</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </sort_order>
                     </fields>
                 </paymaster_webmoney>
                 <paymaster_monexy translate="label">
-                    <label>PayMaster MoneXy Method</label>
+                    <label>PayMasterUA MoneXy Settings</label>
                     <frontend_type>text</frontend_type>
                     <sort_order>3</sort_order>
                     <show_in_default>1</show_in_default>
@@ -162,10 +177,18 @@
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
                         </title>
+                        <sort_order translate="label">
+                            <label>Sort Order</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </sort_order>
                     </fields>
                 </paymaster_monexy>
                 <paymaster_easypay translate="label">
-                    <label>PayMaster EasyPay Method</label>
+                    <label>PayMaster EasyPay Settings</label>
                     <frontend_type>text</frontend_type>
                     <sort_order>3</sort_order>
                     <show_in_default>1</show_in_default>
@@ -189,10 +212,18 @@
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
                         </title>
+                        <sort_order translate="label">
+                            <label>Sort Order</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </sort_order>
                     </fields>
                 </paymaster_easypay>
                 <paymaster_nsmep translate="label">
-                    <label>PayMaster NSMEP Method</label>
+                    <label>PayMaster NSMEP Settings</label>
                     <frontend_type>text</frontend_type>
                     <sort_order>3</sort_order>
                     <show_in_default>1</show_in_default>
@@ -216,10 +247,18 @@
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
                         </title>
+                        <sort_order translate="label">
+                            <label>Sort Order</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </sort_order>
                     </fields>
                 </paymaster_nsmep>
                 <paymaster_terminal_webmoney translate="label">
-                    <label>PayMaster WebMoney Terminal</label>
+                    <label>PayMasterUA Terminals Ukraine Settings</label>
                     <frontend_type>text</frontend_type>
                     <sort_order>3</sort_order>
                     <show_in_default>1</show_in_default>
@@ -243,10 +282,18 @@
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
                         </title>
+                        <sort_order translate="label">
+                            <label>Sort Order</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </sort_order>
                     </fields>
                 </paymaster_terminal_webmoney>
                 <paymaster_card translate="label">
-                    <label>PayMaster Card (Visa/MasterCard)</label>
+                    <label>PayMasterUA Visa/MasterCard Settings</label>
                     <frontend_type>text</frontend_type>
                     <sort_order>3</sort_order>
                     <show_in_default>1</show_in_default>
@@ -270,10 +317,18 @@
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
                         </title>
+                        <sort_order translate="label">
+                            <label>Sort Order</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </sort_order>
                     </fields>
                 </paymaster_card>
                 <paymaster_privat translate="label">
-                    <label>PayMaster Privat24</label>
+                    <label>PayMasterUA Privat 24 Settings</label>
                     <frontend_type>text</frontend_type>
                     <sort_order>3</sort_order>
                     <show_in_default>1</show_in_default>
@@ -297,10 +352,18 @@
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
                         </title>
+                        <sort_order translate="label">
+                            <label>Sort Order</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </sort_order>
                     </fields>
                 </paymaster_privat>
                 <paymaster_liqpay translate="label">
-                    <label>PayMaster LiqPay</label>
+                    <label>PayMasterUA Liqpay Settings</label>
                     <frontend_type>text</frontend_type>
                     <sort_order>3</sort_order>
                     <show_in_default>1</show_in_default>
@@ -324,6 +387,14 @@
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
                         </title>
+                        <sort_order translate="label">
+                            <label>Sort Order</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </sort_order>
                     </fields>
                 </paymaster_liqpay>
             </groups>
