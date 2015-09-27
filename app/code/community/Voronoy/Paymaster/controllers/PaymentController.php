@@ -104,7 +104,7 @@ class Voronoy_Paymaster_PaymentController extends Mage_Core_Controller_Front_Act
             Mage::helper('voronoy_paymaster')->restoreQuote($quote);
         }
 
-        $session->addError(Mage::helper('voronoy_paymaster')->__('Payment was fail. Pleas try again later.'));
+        $session->addError(Mage::helper('voronoy_paymaster')->__('Payment was fail. Please try again later.'));
         $this->_redirect('checkout/cart');
     }
 }
