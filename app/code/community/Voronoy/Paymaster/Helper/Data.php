@@ -36,7 +36,13 @@ class Voronoy_Paymaster_Helper_Data extends Mage_Core_Helper_Abstract
 
     public function getGatewayUrl()
     {
-        return Mage::getStoreConfig('payment/paymaster_general/gateway_url');
+        $gatewayUrl = Mage::getStoreConfig('payment/paymaster_general/gateway_url');
+        $lang = Mage::getStoreConfig('payment/paymaster_general/lang');
+        if ($lang) {
+            $gatewayUrl = sprintf("%s%s/", $gatewayUrl, $lang, '/');
+        }
+
+        return $gatewayUrl;
     }
 
     public function getOrderState()

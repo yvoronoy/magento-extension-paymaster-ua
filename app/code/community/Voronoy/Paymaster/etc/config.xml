@@ -63,13 +63,9 @@
     <default>
         <payment>
             <paymaster_general>
-                <model>voronoy_paymaster/method_general</model>
                 <active>1</active>
-                <title>PayMasterUA</title>
                 <order_status>processing</order_status>
-                <test>0</test>
                 <gateway_url>https://lmi.paymaster.ua/</gateway_url>
-                <merchant_id></merchant_id>
                 <secret_key backend_model="adminhtml/system_config_backend_encrypted"></secret_key>
             </paymaster_general>
             <paymaster_test>
@@ -77,6 +73,11 @@
                 <active>0</active>
                 <title>PayMasterUA Test</title>
             </paymaster_test>
+            <paymaster_all>
+                <model>voronoy_paymaster/method_all</model>
+                <active>0</active>
+                <title>PayMasterUA</title>
+            </paymaster_all>
             <paymaster_webmoney>
                 <model>voronoy_paymaster/method_webmoney</model>
                 <active>0</active>
@@ -97,11 +98,11 @@
                 <active>0</active>
                 <title>NSMEP</title>
             </paymaster_nsmep>
-            <paymaster_terminal_webmaster>
+            <paymaster_terminal_webmoney>
                 <model>voronoy_paymaster/method_terminal_webmoney</model>
                 <active>0</active>
                 <title>Terminals Ukraine</title>
-            </paymaster_terminal_webmaster>
+            </paymaster_terminal_webmoney>
             <paymaster_card>
                 <model>voronoy_paymaster/method_card</model>
                 <active>0</active>

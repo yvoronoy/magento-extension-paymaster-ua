@@ -164,7 +164,7 @@ class Voronoy_Paymaster_Model_Request extends Varien_Object
         $sign = $this->getConfig()->getMerchantId() . $this->getOrder()->getIncrementId()
             . $this->getData('LMI_SYS_PAYMENT_ID') . $this->getData('LMI_SYS_PAYMENT_DATE')
             . $this->getData('LMI_PAYMENT_AMOUNT') . $this->getData('LMI_PAID_AMOUNT')
-            . $this->getPaymentMethod()->getPaymentSystemId() . $this->getData('LMI_MODE')
+            . $this->getData('LMI_PAYMENT_SYSTEM') . $this->getData('LMI_MODE')
             . $this->getConfig()->getMerchantSecretKey();
 
         $sign = strtoupper(hash($this->getConfig()->getEncryptionMethod(), $sign));
