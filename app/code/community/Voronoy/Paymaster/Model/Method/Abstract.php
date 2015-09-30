@@ -120,7 +120,7 @@ abstract class Voronoy_Paymaster_Model_Method_Abstract extends Mage_Payment_Mode
         if (!$order->getId() || $order->isCanceled()) {
             $result = false;
         }
-        if ($order->getGrandTotal()
+        if ($order->getBaseTotalDue()
             != $request->getData(Voronoy_Paymaster_Model_Request::FIELD_NAME_PAYMENT_AMOUNT)
         ) {
             $result = false;

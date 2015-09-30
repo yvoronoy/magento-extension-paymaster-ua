@@ -60,7 +60,7 @@ class Voronoy_Paymaster_Model_Request extends Varien_Object
     {
         $requestData = array(
             self::FIELD_NAME_MERCHANT_ID    => $this->getConfig()->getMerchantId(),
-            self::FIELD_NAME_PAYMENT_AMOUNT => sprintf("%0.2f", $this->getOrder()->getTotalDue()),
+            self::FIELD_NAME_PAYMENT_AMOUNT => sprintf("%0.2f", $this->getOrder()->getBaseTotalDue()),
             self::FIELD_NAME_PAYMENT_NO     => $this->getOrder()->getIncrementId(),
             self::FIELD_NAME_PAYMENT_DESC   => '',
             self::FIELD_NAME_SUCCESS_URL    => Mage::getUrl('paymaster/payment/success'),
@@ -77,7 +77,7 @@ class Voronoy_Paymaster_Model_Request extends Varien_Object
     public function getSignOfRequest()
     {
         $hash = sprintf("%s%s%0.2f%s", $this->getConfig()->getMerchantId(), $this->getOrder()->getIncrementId(),
-            $this->getOrder()->getTotalDue(), $this->getConfig()->getMerchantSecretKey());
+            $this->getOrder()->getBaseTotalDue(), $this->getConfig()->getMerchantSecretKey());
         return strtoupper(hash($this->getConfig()->getEncryptionMethod(), $hash));
     }
 
