@@ -1,33 +1,33 @@
 <?php
+
 /**
- * Magento PayMaster Extension
+ * Magento PayMaster Extension.
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
  * the Free Software Foundation, either version 3 of the License, or
  * (at your option) any later version.
-
+ 
  * This program is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  * GNU General Public License for more details.
-
+ 
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  *
  * @copyright Copyright (c) 2015 by Yaroslav Voronoy (y.voronoy@gmail.com)
  * @license   http://www.gnu.org/licenses/
  */
-
 class Voronoy_Paymaster_Block_Method_Form extends Mage_Payment_Block_Form
 {
     /**
-     * Form Id
+     * Form Id.
      */
     const ELEMENT_FORM_ID = 'paymaster_form';
 
     /**
-     * Block Template
+     * Block Template.
      *
      * @var string
      */
@@ -44,7 +44,7 @@ class Voronoy_Paymaster_Block_Method_Form extends Mage_Payment_Block_Form
     protected $_order;
 
     /**
-     * Form
+     * Form.
      *
      * @var Varien_Data_Form
      */
@@ -57,7 +57,7 @@ class Voronoy_Paymaster_Block_Method_Form extends Mage_Payment_Block_Form
     }
 
     /**
-     * Get Form
+     * Get Form.
      *
      * @return Varien_Data_Form
      */
@@ -71,12 +71,12 @@ class Voronoy_Paymaster_Block_Method_Form extends Mage_Payment_Block_Form
                 ->setMethod('POST')
                 ->setUseContainer(true);
         }
+
         return $this->_form;
     }
 
-
     /**
-     * Prepare Form
+     * Prepare Form.
      */
     protected function _prepareForm()
     {
@@ -95,7 +95,7 @@ class Voronoy_Paymaster_Block_Method_Form extends Mage_Payment_Block_Form
     }
 
     /**
-     * Get Current Order
+     * Get Current Order.
      *
      * @return Mage_Sales_Model_Order
      */
@@ -121,6 +121,7 @@ class Voronoy_Paymaster_Block_Method_Form extends Mage_Payment_Block_Form
             $request->prepareRequest();
             $this->_fields = $request->getData();
         }
+
         return $this->_fields;
     }
 
@@ -131,5 +132,4 @@ class Voronoy_Paymaster_Block_Method_Form extends Mage_Payment_Block_Form
     {
         $this->_fields = $fields;
     }
-
 }

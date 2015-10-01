@@ -1,46 +1,46 @@
 <?php
+
 /**
- * Magento PayMaster Extension
+ * Magento PayMaster Extension.
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
  * the Free Software Foundation, either version 3 of the License, or
  * (at your option) any later version.
-
+ 
  * This program is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  * GNU General Public License for more details.
-
+ 
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  *
  * @copyright Copyright (c) 2015 by Yaroslav Voronoy (y.voronoy@gmail.com)
  * @license   http://www.gnu.org/licenses/
  */
-
 abstract class Voronoy_Paymaster_Model_Method_Abstract extends Mage_Payment_Model_Method_Abstract
 {
     /**
-     * Is initialize needed
+     * Is initialize needed.
      *
      * @var bool
      */
-    protected $_isInitializeNeeded      = true;
+    protected $_isInitializeNeeded = true;
 
     /**
-     * Can we use payment in backend
+     * Can we use payment in backend.
      *
      * @var bool
      */
-    protected $_canUseInternal          = false;
+    protected $_canUseInternal = false;
 
     /**
-     * Can we use for Multi Shipping
+     * Can we use for Multi Shipping.
      *
      * @var bool
      */
-    protected $_canUseForMultishipping  = false;
+    protected $_canUseForMultishipping = false;
 
     /**
      * @var Voronoy_Paymaster_Model_Request
@@ -65,8 +65,8 @@ abstract class Voronoy_Paymaster_Model_Method_Abstract extends Mage_Payment_Mode
         if (!$this->_config) {
             $this->_config = Mage::getModel('voronoy_paymaster/config');
             $this->_config->setPaymentCode($this->getCode());
-
         }
+
         return $this->_config;
     }
 
@@ -79,7 +79,7 @@ abstract class Voronoy_Paymaster_Model_Method_Abstract extends Mage_Payment_Mode
     }
 
     /**
-     * Get Redirect Url after Order Place
+     * Get Redirect Url after Order Place.
      *
      * @return string
      */
@@ -89,7 +89,7 @@ abstract class Voronoy_Paymaster_Model_Method_Abstract extends Mage_Payment_Mode
     }
 
     /**
-     * Get Request
+     * Get Request.
      *
      * @return Voronoy_Paymaster_Model_Request
      */
@@ -98,11 +98,12 @@ abstract class Voronoy_Paymaster_Model_Method_Abstract extends Mage_Payment_Mode
         if (!$this->_request) {
             $this->_request = Mage::getModel('voronoy_paymaster/request');
         }
+
         return $this->_request;
     }
 
     /**
-     * Validate Request
+     * Validate Request.
      *
      * @param Voronoy_Paymaster_Model_Request $request
      *
@@ -130,7 +131,7 @@ abstract class Voronoy_Paymaster_Model_Method_Abstract extends Mage_Payment_Mode
     }
 
     /**
-     * Define if debugging is enabled
+     * Define if debugging is enabled.
      *
      * @return bool
      */
@@ -139,4 +140,3 @@ abstract class Voronoy_Paymaster_Model_Method_Abstract extends Mage_Payment_Mode
         return $this->getConfig()->getDebug();
     }
 }
- 
