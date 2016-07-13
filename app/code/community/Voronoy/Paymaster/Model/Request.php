@@ -60,7 +60,8 @@ class Voronoy_Paymaster_Model_Request extends Varien_Object
     {
         $requestData = array(
             self::FIELD_NAME_MERCHANT_ID => $this->getConfig()->getMerchantId(),
-            self::FIELD_NAME_PAYMENT_AMOUNT => sprintf('%0.2f', $this->getOrder()->getBaseTotalDue()),
+            self::FIELD_NAME_PAYMENT_AMOUNT => Mage::helper('voronoy_paymaster')
+                ->convertToDefaultCurrency($this->getOrder()->getBaseTotalDue()),
             self::FIELD_NAME_PAYMENT_NO => $this->getOrder()->getIncrementId(),
             self::FIELD_NAME_PAYMENT_DESC => '',
             self::FIELD_NAME_SUCCESS_URL => Mage::getUrl('paymaster/payment/success'),

@@ -20,6 +20,11 @@
 class Voronoy_Paymaster_Helper_Data extends Mage_Core_Helper_Abstract
 {
     /**
+     * Ukrainian Hrivna currency code
+     */
+    const UAH_CURRENCY_CODE = 'UAH';
+
+    /**
      * Restore Quote and Replace Current Quote.
      *
      * @param $quote
@@ -48,5 +53,22 @@ class Voronoy_Paymaster_Helper_Data extends Mage_Core_Helper_Abstract
     public function getOrderState()
     {
         return Mage::getStoreConfig('payment/paymaster_general/order_status');
+    }
+
+    public function convertToDefaultCurrency($baseAmount)
+    {
+        $availableCodes = Mage::app()->getStore()->getAvailableCurrencyCodes();
+        if (!in_array(self::UAH_CURRENCY_CODE, $availableCodes)) {
+            return Mage::app()->getStore()->roundPrice($baseAmount);
+        }
+
+        $baseCurrency = Mage::app()->getStore()->getBaseCurrency();
+        $uahAmount = $baseAmount;
+        if ($baseCurrency->getCode() != self::UAH_CURRENCY_CODE) {
+            $uahAmount = $baseCurrency->convert($baseAmount, self::UAH_CURRENCY_CODE);
+        }
+
+        $uahAmount = Mage::app()->getStore()->roundPrice($uahAmount);
+        return $uahAmount;
     }
 }
